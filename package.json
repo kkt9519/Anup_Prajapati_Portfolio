@@ -1,0 +1,15 @@
+{
+  "name": "anup-prajapati-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Full-Stack Developer Portfolio for Anup Prajapati",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "install:all": "npm install && npm --prefix client install && npm --prefix server install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
